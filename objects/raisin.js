@@ -12,10 +12,14 @@ const raisinAlarmArray = function (cookies) {
   // Put your solution here
   const result = [];
   for (const biscuit of cookies) {
-    if (biscuit === "🍇") {
-      result.push("Raisin alert!");
-    } else {
-      result.push("All good!");
+    if (Array.isArray(biscuit)) {
+      for (const biscuits of biscuit) {
+        if (biscuits === "🍇") {
+          result.push("Raisin alert!");
+        } else {
+          result.push("All good!");
+        }
+      }
     }
   }
   return result;
@@ -37,10 +41,4 @@ console.log(
     ["🍫", "🍫", "🍫"],
   ])
 );
-
-
-
-
-
-
 
