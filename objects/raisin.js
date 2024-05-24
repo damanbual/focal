@@ -1,6 +1,6 @@
 
-const raisinAlarmArray = function (cookie) {
-  for (let i = 0; i < cookie.length; i++ ) {
+const raisinAlarmArray = function(cookie) {
+  for (let i = 0; i < cookie.length; i++) {
     if (cookie[i] === "🍇") {
       return "Raisin alert!";
     }
@@ -10,10 +10,6 @@ const raisinAlarmArray = function (cookie) {
 
 
 
-console.log(
-  raisinAlarmArray([
-    ["🍫", "🍫", "🍇", "🍫"],
-    ["🍫", "🍇", "🍫", "🍫", "🍇"],
-    ["🍫", "🍫", "🍫"],
-  ])
-);
+console.log(raisinAlarm(["🍫", "🍫", "🍇", "🍫"]));
+console.log(raisinAlarm(["🍫", "🍇", "🍫", "🍫", "🍇"]));
+console.log(raisinAlarm(["🍫", "🍫", "🍫"]));
