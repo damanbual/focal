@@ -8,3 +8,7 @@ const passingGrades = grades.filter(function(grade) {
 
 console.log("Passing grades:", passingGrades);
 
+// Convert to Arrow function
+const passingGrades = grades.filter(grade => grade >= 70);
+console.log("Passing grades:", passingGrades);
+
